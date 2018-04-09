@@ -66,13 +66,13 @@ body{
 	height: 500px;
 	color: white;
 }
-.mainT{
-	color: #3b577d;
-	transform: translateX(60%);
-	font-family: 'Lato-bold', sans-serif;
-	line-height: 500px;
-	font-size: 2.2em;
-}
+/*.mainT{*/
+	/*color: #3b577d;*/
+	/*transform: translateX(60%);*/
+	/*font-family: 'Lato-bold', sans-serif;*/
+	/*line-height: 500px;*/
+	/*font-size: 2.2em;*/
+/*}*/
 /* fin portada */
 
 /* Quienes Somos */
