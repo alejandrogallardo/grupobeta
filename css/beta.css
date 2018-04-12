@@ -1,17 +1,20 @@
 * {
-/* border: 1px solid red; */
-border: 0;
-margin: 0;
+	/* border: 1px solid red; */
+	border: 0;
+	margin: 0;
 }
 body{
 	background: black;
+	width: 100%;
 }
 /* menu */
 .login{
 	background-color: black;
 	width: 100%;
 	text-align: right;
-	padding: 3px;
+	padding: 0;
+	padding-top: 3px;
+	padding-bottom: 3px;
 }
 .login a{
 	color: rgb(180, 180, 180);
@@ -20,7 +23,6 @@ body{
 	padding-right: 20px;
 }
 .login p{
-	/* text-align: left; */
 	float: left;
 	color:white;
 	padding-left: 20px;
@@ -28,13 +30,28 @@ body{
 .login a:hover{
 	color: aliceblue;
 }
+.callPhone{
+	background-color: white;
+	left: 85%;
+	top: 90%;
+	position: fixed;
+	z-index: 3;
+	visibility: hidden;
+	padding: 5px;
+	border-radius: 50%;
+	background-size: 20px;
+}
+@media screen and (max-width: 768px){
+	.callPhone{
+		visibility: visible;
+	}
+}
 .nav-bar{
 	background-color: #3b577d;
 	position: sticky;
 	display: flex;
 	justify-content: flex-end;
 	width: 100%;
-	/* padding: 10px; */
 	z-index: 2;
 	top: 0;
 }
@@ -49,7 +66,6 @@ body{
 	font-size: 1.2em;
 	color: rgb(180, 180, 180);
 	text-decoration: none;
-	/* padding: 15px; */
 }
 .nav-bar a:active,
 .nav-bar a.active {
@@ -66,13 +82,12 @@ body{
 	height: 500px;
 	color: white;
 }
-/*.mainT{*/
-	/*color: #3b577d;*/
-	/*transform: translateX(60%);*/
-	/*font-family: 'Lato-bold', sans-serif;*/
-	/*line-height: 500px;*/
-	/*font-size: 2.2em;*/
-/*}*/
+.mainT{
+	color: #3b577d;
+	font-family: 'Lato-bold', sans-serif;
+	line-height: 500px;
+	font-size: 2.2em;
+}
 /* fin portada */
 
 /* Quienes Somos */
@@ -84,7 +99,7 @@ body{
 }
 .text-center{
 	margin: auto;
-	padding-top: 100px; 
+	padding-top: 100px;
 }
 .quinesSomos{
 	padding-bottom: 20px;
@@ -106,8 +121,9 @@ body{
 .text-muted{
 	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
+	padding: 15px;
 }
-@media screen and (max-width: 39.9375em){
+@media screen and (max-width: 768px){
 	.row{
 		display: flex;
 		flex-wrap: wrap;
@@ -132,18 +148,18 @@ body{
 	content: '';
 	display: block;
 	width: 100%;
-  }
-  
-  .timeline {
+}
+
+.timeline {
 	margin: 0 auto;
-	padding: 0 10px;
+	/* padding: 0 10px; */
 	position: relative;
 	transition: all 0.25s ease-in;
 	width: 100%;
 	background-color: #c0d9e5;
-  }
-  /* linea central */
-  .timeline::before {
+}
+/* linea central */
+.timeline::before {
 	background: #fefefe;
 	content: '';
 	height: 90%;
@@ -151,32 +167,34 @@ body{
 	position: absolute;
 	top: 50px;
 	width: 3px;
-  }
-  
-  .timeline::after {
+}
+
+.timeline::after {
 	clear: both;
 	content: '';
 	display: table;
 	width: 100%;
-  }
-  
-  .timeline a {
+}
+
+.timeline a {
 	color: #fefefe;
 	font-weight: bold;
 	transition: all 0.25s ease-in;
-  }
-  
-  .timeline a:hover {
+}
+
+.timeline a:hover {
 	box-shadow: 0 1px 0px 0px #fefefe;
 	transition: all 0.25s ease-in;
-  }
-  
-  .timeline .timeline-item {
+}
+
+.timeline .timeline-item {
 	margin-bottom: 50px;
 	position: relative;
-  }
-  
-  .timeline .timeline-item .timeline-icon {
+}
+.timeline-item{
+	padding: 15px;
+}
+.timeline .timeline-item .timeline-icon {
 	background: #fefefe;
 	border-radius: 50%;
 	height: 50px;
@@ -186,99 +204,82 @@ body{
 	position: absolute;
 	top: 0;
 	width: 50px;
-  }
-  
-  .timeline .timeline-item .timeline-icon img,
-  .timeline .timeline-item .timeline-icon svg {
+}
+
+.timeline .timeline-item .timeline-icon img,
+.timeline .timeline-item .timeline-icon svg {
 	left: 14px;
 	position: relative;
 	top: 11px;
-  }
-  
-  .timeline .timeline-item .timeline-icon svg {
+}
+
+.timeline .timeline-item .timeline-icon svg {
 	top: 14px;
-  }
-  /* color de cuadro de texto */
-  .timeline .timeline-item .timeline-content {
+}
+/* color de cuadro de texto */
+.timeline .timeline-item .timeline-content {
 	padding: 20px;
 	text-align: right;
 	transition: all 0.25s ease-in;
 	width: 45%;
 	/* background: transparent; */
 	background: #44679f;
-  }
-  
-  .timeline .timeline-item .timeline-content p {
+}
+
+.timeline .timeline-item .timeline-content p {
 	color: #fefefe;
-  }
-  
-  .timeline .timeline-item .timeline-content p {
+}
+
+.timeline .timeline-item .timeline-content p {
 	font-size: 16px;
 	line-height: 1.4;
 	margin-bottom: 0;
-  }
-  
-  .timeline .timeline-item .timeline-content .timeline-content-date {
+}
+
+.timeline .timeline-item .timeline-content .timeline-content-date {
 	font-size: 16px;
 	font-weight: bold;
 	margin-bottom: 0;
-  }
-  
-  .timeline .timeline-item .timeline-content .timeline-content-month {
+}
+
+.timeline .timeline-item .timeline-content .timeline-content-month {
 	font-size: 0.875rem;
 	text-transform: uppercase;
 	font-weight: 400;
-  }
-  
-  .timeline .timeline-item .timeline-content.right {
+}
+
+.timeline .timeline-item .timeline-content.right {
 	float: right;
 	text-align: left;
-  }
-  
-  @media screen and (max-width: 39.9375em) {
+}
+
+@media screen and (max-width: 768px) {
 	.timeline {
-	  margin: 30px;
-	  padding: 0;
-	  width: 90%;
+		margin: 30px;
+		padding: 0;
+		width: 90%;
 	}
 	.timeline::before {
-	  left: 0;
+		left: 0;
 	}
 	.timeline .timeline-item .timeline-content {
-	  float: right;
-	  text-align: left;
-	  width: 90%;
+		float: right;
+		text-align: left;
+		width: 90%;
 	}
 	.timeline .timeline-item .timeline-content::before, .timeline .timeline-item .timeline-content.right::before {
-	  border-left: 0;
-	  border-right: 7px solid #fefefe;
-	  left: 10%;
-	  margin-left: -6px;
+		border-left: 0;
+		border-right: 7px solid #fefefe;
+		left: 10%;
+		margin-left: -6px;
 	}
 	.timeline .timeline-item .timeline-icon {
-	  left: 0;
+		left: 0;
 	}
-  }
+}
 /* ---------------------- fin timeline --------------------------------------- */
 
 /* sections */
-.servicios{
-	color: white;
-	font-size: 18px;
-/* The image used */
-  background-image: url("../img/pressenterNcr.JPG");
-	
-/* Set a specific height */
-	height: 100%; 
-
-/* Create the parallax scrolling effect */
-  background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-}
 .headerServicios{
 	background-color: rgb(10, 10, 10, 0.5);
 	text-align: center;
@@ -286,33 +287,80 @@ body{
 	padding-bottom: 80px;
 	font-family: 'Lato - bold', sans-serif;
 }
+.serviciosAtm{
+	color: white;
+	font-size: 18px;
+	/* The image used */
+	background-image: url("../img/pressenterNcr.jpg");
+
+	/* Set a specific height */
+	height: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.techSupport{
+	color: white;
+	font-size: 18px;
+	/* The image used */
+	background-image: url("../img/techSupport.jpg");
+
+	/* Set a specific height */
+	height: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.printer{
+	color: white;
+	font-size: 18px;
+	/* The image used */
+	background-image: url("../img/board.jpg");
+
+	/* Set a specific height */
+	height: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.software{
+	color: white;
+	font-size: 18px;
+	/* The image used */
+	background-image: url("../img/software.jpg");
+
+	/* Set a specific height */
+	height: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .kioscos{
-	background-color: #e7e7e7;
-	height: 200px;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	flex-direction: column;
-	justify-content: center;
-}
-.kioscos p{
-	padding: 10px;
-}
-.servicios2 {
 	color: white;
 	font-size: 18px;
 	/* The image used */
 	background-image: url("../img/codigo.png");
 
-    /* Set a specific height */
-    height: 100%; 
+	/* Set a specific height */
+	height: 100%;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-		background-size: cover;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .container{
 	display: flex;
@@ -351,7 +399,10 @@ body{
 	display: flex;
 	flex-flow: row-reverse;
 }
-@media screen and (max-width: 39.9375em) {
+@media screen and (max-width: 768px) {
+	.mobil{
+		height: 50%;
+	}
 	.section{
 		background-image: none;
 	}
@@ -366,17 +417,18 @@ body{
 		padding: 0;
 	}
 	.foto img{
-		width: 100%;
-		height: 100%;
+		width: 50%;
+		height: 50%;
 	}
 	.articulo{
 		width: 100%;
 		padding: 0;
+		padding-top: 20px;
 	}
 }
-	/* fin section */
+/* fin section */
 
-	/* contacto */
+/* contacto */
 /* inicia formulario */
 .contacto {
 	background-color: #e7e7e7;
@@ -392,56 +444,56 @@ body{
 }
 .cont {
 	width: 50%;
-  border: 1px solid #38506a;
-  margin: 20px;
+	border: 1px solid #38506a;
+	margin: 20px;
 	padding: 20px;
 	border-radius: 5px;
 	background-image: url("../img/mapa.jpg");
 	background-size: cover;
 }
 form {
-  width: 50%;
-  border: 1px solid #38506a;
-  margin: 20px;
+	width: 50%;
+	border: 1px solid #38506a;
+	margin: 20px;
 	padding: 20px;
 	border-radius: 5px;
 	background-color: #e7e7e7;
-  }
+}
 label {
-  font-size: 12px;
-  display: none;
-  width: 100%;
-  }
+	font-size: 12px;
+	display: none;
+	width: 100%;
+}
 input, textarea {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin-bottom: 20px;
-  width: 100%;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px solid #ccc;
+	font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
 }
 textarea {
-  resize: vertical;
-  min-height: 100px;
-  max-height: 300px;
+	resize: vertical;
+	min-height: 100px;
+	max-height: 300px;
 }
 input:focus, textarea:focus {
-  border: 1px solid #38506a;
+	border: 1px solid #38506a;
 }
 input[type="submit"]{
-  margin-bottom: 1px;
-  text-transform: uppercase;
-  border: 1px solid #38506a;
-  color: #38506a;
-  background-color: transparent;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+	margin-bottom: 1px;
+	text-transform: uppercase;
+	border: 1px solid #38506a;
+	color: #38506a;
+	background-color: transparent;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 input[type="submit"]:hover{
-  background: #38506a;
-  cursor: pointer;
-  color: #000000;
+	background: #38506a;
+	cursor: pointer;
+	color: #000000;
 }
 /* fin formulario */
 /* botones redes sociales*/
@@ -454,24 +506,24 @@ input[type="submit"]:hover{
 
 .btn {
 
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
+	font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	text-transform: uppercase;
 }
 .btn-default {
-  color: #38506a;
-  border: 1px solid #38506a;
-  background-color: transparent;
+	color: #38506a;
+	border: 1px solid #38506a;
+	background-color: transparent;
 
 }
 .btn-default:focus, .btn-default:hover {
-    color: black;
-    border: 1px solid #38506a;
-    outline: none;
-    background-color: #38506a; 
+	color: black;
+	border: 1px solid #38506a;
+	outline: none;
+	background-color: #38506a;
 }
-@media screen and (max-width: 39.9375em) {
+@media screen and (max-width: 768px) {
 	.contacto{
 		border-top: 1px solid #38506a;
 	}
@@ -488,11 +540,11 @@ input[type="submit"]:hover{
 	}
 }
 /* fin botones redes sociales*/
-@media screen and (max-width: 39.9375em) {
+@media screen and (max-width: 768px) {
 	.section{
 		background-image: none;
 	}
-}	
+}
 /* fin contacto */
 
 /* footer */
@@ -511,10 +563,10 @@ input[type="submit"]:hover{
 	color: rgb(138, 138, 138);
 	text-decoration: none;
 }
-@media screen and (max-width: 39.9375em) {
+@media screen and (max-width: 768px) {
 	.footer{
 		display: flex;
 		flex-wrap: wrap;
 	}
-}	
+}
 /* fin footer */
