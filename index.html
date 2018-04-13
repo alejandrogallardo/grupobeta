@@ -37,13 +37,16 @@
 </section>
 <!-- fin hero -->
 <!-- menu -->
-<nav id="navB" class="nav-bar">
-    <ul class="rNav">
+<div id="burguer" class="burguerbtn"><i class="fas fa-bars"></i></div>
+<nav id="navB" class="nav-bar active">
+    <div id="nMenu" class="menu">
+    <ul>
         <li class="link-item scroll-effect"><a class="link active" href="#inicio" data-ancla="inicio">Inicio</a></li>
         <li class="link-item"><a class="link" href="historia.html">Nuestra Historia</a></li>
         <li class="link-item scroll-effect"><a class="nav-link link" href="#servicios" data-ancla="servicios">Servicios</a></li>
         <li class="link-item scroll-effect"><a class="link" href="#contacto" data-ancla="contacto">Contacto</a></li>
     </ul>
+    </div>
 </nav>
 <!-- / fin menu -->
 <!-- quienres somos -->
@@ -226,6 +229,15 @@
             $(this).addClass("active");
         });
     });
+    const $burguer = document.getElementById('burguer');
+    const $navbar = document.getElementById('navB');
+    const $menu = document.getElementById('nMenu');
+    $burguer.addEventListener('touchstart', toggleMenu);
+    $menu.addEventListener('click', toggleMenu);
+    function toggleMenu () {
+        $navbar.classList.toggle('active')
+        $menu.classList.remove('active')
+    };
 </script>
 </body>
 </html>

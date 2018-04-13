@@ -22,14 +22,16 @@
 </section>
 <!-- fin hero -->
 <!-- menu -->
-<nav class="nav-bar">
-    <ul>
-        <li class="link-item"><a class="link active" href="index.html">Inicio</a></li>
-        <li class="link-item"><a class="link" href="historia.html">Nuestra Historia</a></li>
-        <li class="link-item"><a class="link" href="index.html#servicios">Servicios</a></li>
-        <li class="link-item"><a class="link" href="index.html#contacto">Contacto</a></li>
-
-    </ul>
+<div id="burguer" class="burguerbtn"><i class="fas fa-bars"></i></div>
+<nav id="navB" class="nav-bar active">
+    <div id="nMenu" class="menu">
+        <ul>
+            <li class="link-item scroll-effect"><a class="link active" href="index.html" data-ancla="inicio">Inicio</a></li>
+            <li class="link-item"><a class="link" href="historia.html">Nuestra Historia</a></li>
+            <li class="link-item scroll-effect"><a class="nav-link link" href="index.html#servicios" data-ancla="servicios">Servicios</a></li>
+            <li class="link-item scroll-effect"><a class="link" href="index.html#contacto" data-ancla="contacto">Contacto</a></li>
+        </ul>
+    </div>
 </nav>
 <!-- / fin menu -->
 <!-- timeline -->
@@ -151,5 +153,16 @@
     </div>
 </footer>
 <!-- fin sections -->
+<script>
+    const $burguer = document.getElementById('burguer');
+    const $navbar = document.getElementById('navB');
+    const $menu = document.getElementById('nMenu');
+    $burguer.addEventListener('touchstart', toggleMenu);
+    $menu.addEventListener('click', toggleMenu);
+    function toggleMenu () {
+    $navbar.classList.toggle('active')
+    $menu.classList.remove('active')
+    };
+</script>
 </body>
 </html>
