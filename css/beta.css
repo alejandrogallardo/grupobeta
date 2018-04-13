@@ -47,32 +47,36 @@ body{
 	}
 }
 .nav-bar{
-	background-color: #3b577d;
-	position: sticky;
-	display: flex;
-	justify-content: flex-end;
-	width: 100%;
-	z-index: 2;
-	top: 0;
+    background-color: #3b577d;
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    z-index: 2;
+    top: 0;
 }
 .nav-bar li {
-	display: inline-block;
-	padding: 15px;
+    display: inline-block;
+    padding: 15px 8px 15px 8px;
+}
+.link{
+    padding: 15px 10px 15px 10px;
+
 }
 .nav-bar li:hover {
-	background-color: #44679f;
+    background-color: #44679f;
 }
 .link {
-	font-size: 1.2em;
-	color: rgb(180, 180, 180);
-	text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(180, 180, 180);
+    text-decoration: none;
 }
 .nav-bar a:active,
 .nav-bar a.active {
-	color: #c0d9e5;
+    color: #c0d9e5;
 }
 .nav-bar a:hover {
-	color: aliceblue;
+    color: aliceblue;
 }
 /* fin menu */
 /* portada */
