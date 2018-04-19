@@ -4,7 +4,7 @@
 	margin: 0;
 }
 body{
-	background: black;
+	background: white;
 	width: 100%;
 }
 /* menu */
@@ -147,17 +147,10 @@ body{
 /*fin responsive menu*/
 /* fin menu */
 /* portada */
-.hero{
-	background-image: url(../img/betaCover.jpg);
+.hero img {
+	background-color: white;
 	width: 100%;
-	height: 500px;
-	color: white;
-}
-.mainT{
-	color: #3b577d;
-	font-family: 'Lato-bold', sans-serif;
-	line-height: 500px;
-	font-size: 2.2em;
+	height: auto;
 }
 /* fin portada */
 
@@ -352,14 +345,20 @@ body{
 
 /* sections */
 .headerServicios{
-	background-color: rgb(10, 10, 10, 0.5);
+	/*background-color: rgb(10, 10, 10, 0.5);*/
 	text-align: center;
 	padding-top: 80px;
 	padding-bottom: 80px;
 	font-family: 'Lato - bold', sans-serif;
 }
+.section h1 {
+	background-color: #cccccc;
+	color: #38506a;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
 .serviciosAtm{
-	color: white;
+	color: #000;
 	font-size: 18px;
 	/* The image used */
 	background-image: url("../img/ncr.jpg");
@@ -373,8 +372,13 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+/* eliminar el punto de los list items*/
+ul, menu, dir {
+	list-style-type: none;
+}
+/* eliminar el punto de los list items*/
 .techSupport{
-	color: white;
+	color: #000;
 	font-size: 18px;
 	/* The image used */
 	background-image: url("../img/techSupport.jpg");
@@ -389,7 +393,7 @@ body{
 	background-size: cover;
 }
 .printer{
-	color: white;
+	color: #000;
 	font-size: 18px;
 	/* The image used */
 	background-image: url("../img/board.jpg");
@@ -404,7 +408,7 @@ body{
 	background-size: cover;
 }
 .software{
-	color: white;
+	color: #000;
 	font-size: 18px;
 	/* The image used */
 	background-image: url("../img/software.jpg");
@@ -419,7 +423,7 @@ body{
 	background-size: cover;
 }
 .kioscos{
-	color: white;
+	color: #000;
 	font-size: 18px;
 	/* The image used */
 	background-image: url("../img/codigo.png");
@@ -459,10 +463,6 @@ body{
 	/* align-items: center; */
 	text-align: center;
 }
-.articulo p{
-	padding: 50px;
-	color: black;
-}
 .articulo h2{
 	color: black;
 }
@@ -473,6 +473,9 @@ body{
 @media screen and (max-width: 768px) {
 	.mobil{
 		height: 50%;
+	}
+	.section h1 {
+		background-color: transparent;
 	}
 	.section{
 		background-image: none;
