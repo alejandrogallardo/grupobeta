@@ -196,6 +196,9 @@ body{
 	.text-muted{
 		padding-bottom: 20px;
 	}
+	.text-center{
+		padding-top: 50px;
+	}
 }
 /* fin Quienes somos */
 
