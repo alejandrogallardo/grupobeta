@@ -448,7 +448,6 @@ ul, menu, dir {
 .foto{
 	padding: 15px;
 	align-content: center;
-	background-color: rgb(10, 10, 10, 0.5);
 	width: 50%;
 	display: flex;
 	justify-content: center;
