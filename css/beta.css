@@ -41,8 +41,14 @@ body{
 	border-radius: 50%;
 	background-size: 20px;
 }
+.mobilLink {
+	visibility: hidden;
+}
 @media screen and (max-width: 768px){
 	.callPhone{
+		visibility: visible;
+	}
+	.mobilLink {
 		visibility: visible;
 	}
 }
