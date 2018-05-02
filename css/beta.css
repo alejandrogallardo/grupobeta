@@ -456,7 +456,7 @@ ul, menu, dir {
 	padding: 25px;
 }
 .foto{
-	padding: 15px;
+	/*padding: 15px;*/
 	align-content: center;
 	width: 50%;
 	display: flex;
