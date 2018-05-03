@@ -235,10 +235,10 @@ body{
 .timeline::before {
 	background: #fefefe;
 	content: '';
-	height: 90%;
+	height: 85%;
 	left: 50%;
 	position: absolute;
-	top: 50px;
+	top: 120px;
 	width: 3px;
 }
 
@@ -356,12 +356,12 @@ body{
 .headerServicios{
 	/*background-color: rgb(10, 10, 10, 0.5);*/
 	text-align: center;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 40px;
+	/*padding-bottom: 80px;*/
 	font-family: 'Lato - bold', sans-serif;
 }
 .section h1 {
-	background-color: #cccccc;
+	/*background-color: #cccccc;*/
 	color: #38506a;
 	padding-bottom: 20px;
 	padding-top: 20px;
@@ -371,81 +371,76 @@ body{
 	color: #000;
 	font-size: 18px;
 	/* The image used */
-	background-image: url("../img/ncr.jpg");
-
+	/*background-image: url("../img/ncr.jpg");*/
+	background-color: white;
 	/* Set a specific height */
 	height: 100%;
 
 	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	/*background-attachment: fixed;*/
+	/*background-position: center;*/
+	/*background-repeat: no-repeat;*/
+	/*background-size: cover;*/
 }
-/* eliminar el punto de los list items*/
-ul, menu, dir {
-	list-style-type: none;
-}
-/* eliminar el punto de los list items*/
 .techSupport{
 	color: #000;
 	font-size: 18px;
 	/* The image used */
-	background-image: url("../img/techSupport.jpg");
-
+	/*background-image: url("../img/techSupport.jpg");*/
+	background-color: white;
 	/* Set a specific height */
 	height: 100%;
 
 	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	/*background-attachment: fixed;*/
+	/*background-position: center;*/
+	/*background-repeat: no-repeat;*/
+	/*background-size: cover;*/
 }
 .printer{
 	color: #000;
 	font-size: 18px;
 	/* The image used */
-	background-image: url("../img/tools.jpg");
-
+	/*background-image: url("../img/tools.jpg");*/
+	background-color: white;
 	/* Set a specific height */
 	height: 100%;
 
 	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	/*background-attachment: fixed;*/
+	/*background-position: center;*/
+	/*background-repeat: no-repeat;*/
+	/*background-size: cover;*/
 }
 .software{
 	color: #000;
 	font-size: 18px;
 	/* The image used */
-	background-image: url("../img/software.jpg");
-
+	/*background-image: url("../img/software.jpg");*/
+	background-color: white;
 	/* Set a specific height */
 	height: 100%;
 
 	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	/*background-attachment: fixed;*/
+	/*background-position: center;*/
+	/*background-repeat: no-repeat;*/
+	/*background-size: cover;*/
 }
 .kioscos{
 	color: #000;
 	font-size: 18px;
 	/* The image used */
-	background-image: url("../img/design.jpg");
-
+	/*background-image: url("../img/design.jpg");*/
+	background-color: white;
 	/* Set a specific height */
 	height: 100%;
 
 	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	/*background-attachment: fixed;*/
+	/*background-position: center;*/
+	/*background-repeat: no-repeat;*/
+	/*background-size: cover;*/
 }
 .container{
 	display: flex;
@@ -467,7 +462,8 @@ ul, menu, dir {
 	height: 100%;
 }
 .articulo{
-	padding: 8px;
+	padding-left: 40px;
+	padding-right: 20px;
 	width: 50%;
 	background-color: #e7e7e7;
 	display: flex;
@@ -475,10 +471,14 @@ ul, menu, dir {
 	justify-content: center;
 	font-family: 'Lato-bold', sans-serif;
 	font-size: 1em;
-	text-align: center;
+}
+.rv{
+	padding-left: 20px;
+	padding-right: 40px;
 }
 .articulo h2{
 	color: black;
+	padding-bottom: 10px;
 }
 .reverse{
 	display: flex;
@@ -487,6 +487,10 @@ ul, menu, dir {
 @media screen and (max-width: 768px) {
 	.mobil{
 		height: 50%;
+	}
+	.headerServicios{
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 	.section h1 {
 		background-color: transparent;
@@ -507,14 +511,14 @@ ul, menu, dir {
 		padding: 0;
 	}
 	.foto img{
-		width: 100%%;
+		width: 100%;
 		height: 100%;
 	}
 	.articulo{
 		width: 100%;
-		padding: 0;
+		padding: 10px;
 		padding-top: 20px;
-		height: 60vh;
+		height: 100%;
 	}
 }
 /* fin section */
